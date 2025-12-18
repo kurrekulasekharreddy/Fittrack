@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FitTrack Pro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Mobile-first SPA container -->
+    <header id="mainHeader">
+      <h1 id="logo">FitTrack Pro</h1>
+      <button id="menuBtn" aria-label="Open menu">☰</button>
+    </header>
+
+    <nav id="nav" class="hidden">
+      <ul id="navList">
+        <li><a href="#" data-view="dashboard">Dashboard</a></li>
+        <li><a href="#" data-view="workouts">Workouts</a></li>
+        <li><a href="#" data-view="meals">Meals</a></li>
+        <li><a href="#" data-view="progress">Progress</a></li>
+        <li><a href="#" data-view="goals">Goals</a></li>
+        <li><a href="#" data-view="profile">Profile</a></li>
+      </ul>
+    </nav>
+
+    <main id="mainView" role="main">
+      <!-- Views will be injected here -->
+    </main>
+
+    <footer id="footer">
+      <small>FitTrack Pro — Demo Project</small>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
